@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="language" content="en">
+    <meta name="description" content="This is a simple Calculator.">
+    <meta name="author" content="Bruce Bainomugisha">
+    <meta name="keywords" content="calculate, calculator, add, subtract, divide, multiply">
+
+    <link rel="stylesheet" href="calculator.css">
+
+</head>
+<body>
+    <div class="main-calculator">
+        <div class="display">
+            <input type="text" id="input" disabled>
+        </div>
+        <div class="interact">
+            <div><button class ="clear" onclick="clearInput()">C</button></div>
+            <div><button class ="clear" onclick="addToInput('(')">(</button></div>
+            <div><button class ="clear" onclick="addToInput(')')">)</button></div>
+            <div><button class="sign" onclick="addToInput('/')">/</button></div>
+            <div><button onclick="addToInput('7')">7</button></div>
+            <div><button onclick="addToInput('8')">8</button></div>
+            <div><button onclick="addToInput('9')">9</button></div>
+            <div><button class="sign" onclick="addToInput('*')">x</button></div>
+            <div><button onclick="addToInput('4')">4</button></div>
+            <div><button onclick="addToInput('5')">5</button></div>
+            <div><button onclick="addToInput('6')">6</button></div>
+            <div><button class="sign" onclick="addToInput('-')">-</button></div>
+            <div><button onclick="addToInput('1')">1</button></div>
+            <div><button onclick="addToInput('2')">2</button></div>
+            <div><button onclick="addToInput('3')">3</button></div>
+            <div><button class="sign" onclick="addToInput('+')">+</button></div>
+            <div class="zero"><button onclick="addToInput('0')">0</button></div>
+            <div><button onclick="addToInput('.')">.</button></div>
+            <div><button class="sign" onclick="calculate()">=</button></div>
+        </div>
+    </div>
+    <button id="dark" onclick="changeMode()">Switch to Dark Mode</button>
+    <script src="calculator.js"></script>
+</body>
+</html>
